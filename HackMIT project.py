@@ -608,7 +608,7 @@ if choice == 2:
     t.write("D",font=("Arial",8,"normal"))
     t.penup()
     #have them guess all the elements
-    print("[Ben-ni]: Shown are the emission spectra for several elements. You may be wondering what an emission spectrum is, and what an element is. ELements are the building blocks of the universe, comprising all of the things in the universe. When these elements are spread really thin, they can let light go through them, and 'split' it, making a rainbow. A rainbow is a type of spectrum. All a spectrum is is a collection of lights. When things get really hot, thousands of times hotter than a summer day, things start to glow, and light up. The sprectra shown are a sort of rainbow that you can see by looking at really hot versions of the elements through a prism, which is a triangular wedge of glass. Stars are me up of really hot elements, and by looking at them through a telescope and a prism, astronomers can see the 'rainbows' made by the elements in the star, and figure out what they're made of, which is pretty neat. Do you know another way of figuring out what things too far away to imagine are made of? I don't. Let's have some fun matching the known element's spectra, on the left, with the mystery ones on the right.")
+    print("[Ben-ni]: Shown are the emission spectra for several elements. You may be wondering what an emission spectrum is, and what an element is. Elements are the building blocks of the universe, comprising all of the things in the universe. When these elements are spread really thin, they can let light go through them, and 'split' it, making a rainbow. A rainbow is a type of spectrum. All a spectrum is is a collection of lights. When things get really hot, thousands of times hotter than a summer day, things start to glow, and light up. The sprectra shown are a sort of rainbow that you can see by looking at really hot versions of the elements through a prism, which is a triangular wedge of glass. Stars are me up of really hot elements, and by looking at them through a telescope and a prism, astronomers can see the 'rainbows' made by the elements in the star, and figure out what they're made of, which is pretty neat. Do you know another way of figuring out what things too far away to imagine are made of? I don't. Let's have some fun matching the known element's spectra, on the left, with the mystery ones on the right.")
     while True:
         try:
             elementa = str(input("Which element do you think mystery spectrum 'A' is of?"))
@@ -768,6 +768,7 @@ if choice == 3:
             t.goto(-20,-190)
             t.write("Hull",font=("Arial",8,"normal"))
         elif newestpart == "engine":
+            print("[Ben-ni]: Excellent idea! Without engines, you can't go anywhere.")
             spaceshipparts.append(newestpart)
             t.penup()
             t.goto(-140,-30)
@@ -794,6 +795,7 @@ if choice == 3:
             t.goto(-90,-90)
             t.write("Engine",font=("Arial",8,"normal"))
         elif newestpart == "fuel tanks":
+            print("[Ben-ni]: Good idea. You need extra fuel to go to Mars, since it's a long way away.")
             spaceshipparts.append(newestpart)
             t.penup()
             t.goto(-140,-130)
@@ -884,7 +886,6 @@ if choice == 3:
     t.dot(100)
     t.penup()
     t.goto(0,120)
-    t.st()
     t.color(255,255,255)
     t.pencolor(0,0,0)
     print("[Ben-ni]: We're finally here, in orbit around Mars. Isn't it beautiful?")

@@ -259,6 +259,7 @@ if choice == 1:
                             x=2
                         else:
                             y=2
+                            x=1
                     except ValueError:
                         print("Sorry, that was unclear. Enter 'yes' for yes and 'no' for no.")
             y=2
@@ -888,6 +889,10 @@ if choice == 3:
     t.goto(0,120)
     t.color(255,255,255)
     t.pencolor(0,0,0)
+    t.penup()
+    t.pencolor(255,255,255)
+    t.goto(-80,-100)
+    t.write("Mars: The Red Planet", font=("Verdana",12,"bold"))
     print("[Ben-ni]: We're finally here, in orbit around Mars. Isn't it beautiful?")
     time.sleep(0.5)
     print("[Ben-ni]: But unfortuanetly I cannot go to Mars myself. But you can! If you try hard, you can go to Mars in reality, and finish our mission for us.")

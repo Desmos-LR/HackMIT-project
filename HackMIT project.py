@@ -2,6 +2,13 @@ import turtle
 import webbrowser
 import time
 import math
+import random
+randomnumber = random.randint(0,3)
+randomnumber = randomnumber + 1
+randomnumbertwo = random.randint(0,2)
+randomnumbertwo = randomnumbertwo +1
+randomnumberthree = random.randint(0,1)
+randomnumberthree = randomnumberthree +1
 t = turtle.Turtle()
 s = turtle.Screen()
 t.speed(0)
@@ -9,6 +16,97 @@ s.bgcolor(0,0,0)
 s.colormode(255)
 t.ht()
 t.penup()
+def hydrogen(x,y):
+    t.penup()
+    t.goto(70+x,50+y)
+    t.pendown()
+    t.width(2)
+    t.pencolor(255,0,0)
+    t.goto(70+x,30+y)
+    t.penup()
+    t.pencolor(50,255,50)
+    t.goto(35+x,50+y)
+    t.pendown()
+    t.goto(35+x,30+y)
+    t.penup()
+    t.pencolor(0,0,215)
+    t.goto(23+x,50+y)
+    t.pendown()
+    t.goto(23+x,30+y)
+    t.penup()
+    t.pencolor(148,0,211)
+    t.goto(15+x,50+y)
+    t.pendown()
+    t.goto(15+x,30+y)
+    t.penup()
+def helium(x,y):
+    t.width(2)
+    t.penup()
+    t.goto(73+x,50+y)
+    t.pencolor(255,0,0)
+    t.pendown()
+    t.goto(73+x,30+y)
+    t.penup()
+    t.width(1)
+    t.goto(76+x,50+y)
+    t.pencolor(210,0,0)
+    t.pendown()
+    t.goto(76+x,30+y)
+    t.penup()
+    t.width(4)
+    t.pencolor(255,255,0)
+    t.goto(50+x,50+y)
+    t.pendown()
+    t.goto(50+x,30+y)
+    t.penup()
+    t.goto(35+x,50+y)
+    t.pendown()
+    t.width(2)
+    t.pencolor(50,255,50)
+    t.goto(35+x,30+y)
+    t.penup()
+    t.goto(25+x,50+y)
+    t.pendown()
+    t.pencolor(50,255,150)
+    t.goto(25+x,30+y)
+    t.penup()
+    t.goto(5+x,50+y)
+    t.width(1)
+    t.pendown()
+    t.pencolor(130,0,200)
+    t.goto(5+x,30+y)
+    t.penup()
+def oxygen(x,y):
+    t.penup()
+    t.goto(60+x,50+y)
+    t.width(1)
+    t.pencolor(0,210,0)
+    t.pendown()
+    t.goto(60+x,30+y)
+    t.penup()
+    t.goto(70+x,50+y)
+    t.pencolor(210,0,0)
+    t.pendown()
+    t.goto(70+x,30+y)
+    t.penup()
+    t.goto(75+x,50+y)
+    t.pencolor(180,0,0)
+    t.pendown()
+    t.goto(75+x,30+y)
+    t.penup()
+def sodium(x,y):
+    t.penup()
+    t.goto(70+x,30+y)
+    t.pencolor(255,255,0)
+    t.pendown()
+    t.goto(70+x,50+y)
+    t.penup()
+    t.goto(75+x,50+y)
+    t.pendown()
+    t.pencolor(235,235,0)
+    t.pendown()
+    t.goto(75+x,30+y)
+    t.penup()
 #ask which module they wish to use
 while True:
     try:
@@ -371,28 +469,6 @@ if choice == 2:
     t.goto(0,30)
     t.goto(0,50)
     t.penup()
-    t.goto(70,50)
-    t.pendown()
-    t.width(2)
-    t.pencolor(255,0,0)
-    t.goto(70,30)
-    t.penup()
-    t.pencolor(50,255,50)
-    t.goto(35,50)
-    t.pendown()
-    t.goto(35,30)
-    t.penup()
-    t.pencolor(0,0,215)
-    t.goto(23,50)
-    t.pendown()
-    t.goto(23,30)
-    t.penup()
-    t.pencolor(148,0,211)
-    t.goto(15,50)
-    t.pendown()
-    t.goto(15,30)
-    t.width(1)
-    t.penup()
     t.goto(0,100)
     t.pencolor(255,255,255)
     t.pendown()
@@ -486,40 +562,6 @@ if choice == 2:
     t.pencolor(130,0,200)
     t.goto(-95,30)
     t.penup()
-    t.width(2)
-    t.goto(73,-50)
-    t.pencolor(255,0,0)
-    t.pendown()
-    t.goto(73,-70)
-    t.penup()
-    t.width(1)
-    t.goto(76,-50)
-    t.pencolor(210,0,0)
-    t.pendown()
-    t.goto(76,-70)
-    t.penup()
-    t.width(4)
-    t.pencolor(255,255,0)
-    t.goto(50,-50)
-    t.pendown()
-    t.goto(50,-70)
-    t.penup()
-    t.goto(35,-50)
-    t.pendown()
-    t.width(2)
-    t.pencolor(50,255,50)
-    t.goto(35,-70)
-    t.penup()
-    t.goto(25,-50)
-    t.pendown()
-    t.pencolor(50,255,150)
-    t.goto(25,-70)
-    t.penup()
-    t.goto(5,-50)
-    t.width(1)
-    t.pendown()
-    t.pencolor(130,0,200)
-    t.goto(5,-70)
     t.penup()
     t.goto(-40,0)
     t.width(1)
@@ -537,32 +579,6 @@ if choice == 2:
     t.pendown()
     t.goto(-25,-20)
     t.penup()
-    t.goto(60,100)
-    t.width(1)
-    t.pencolor(0,210,0)
-    t.pendown()
-    t.goto(60,80)
-    t.penup()
-    t.goto(70,100)
-    t.pencolor(210,0,0)
-    t.pendown()
-    t.goto(70,80)
-    t.penup()
-    t.goto(75,100)
-    t.pencolor(180,0,0)
-    t.pendown()
-    t.goto(75,80)
-    t.penup()
-    t.goto(70,0)
-    t.pencolor(255,255,0)
-    t.pendown()
-    t.goto(70,-20)
-    t.penup()
-    t.goto(75,0)
-    t.pendown()
-    t.pencolor(235,235,0)
-    t.pendown()
-    t.goto(75,-20)
     t.penup()
     t.goto(-30,-50)
     t.pencolor(255,255,0)
@@ -574,6 +590,223 @@ if choice == 2:
     t.pencolor(235,235,0)
     t.pendown()
     t.goto(-25,-70)
+    print(randomnumber, randomnumbertwo,randomnumberthree)
+    if randomnumber == 4 and randomnumbertwo == 3 and randomnumberthree==1:
+        answerd = "hydrogen"
+        answerc = "helium"
+        answera = "oxygen"
+        answerb = "sodium"
+        hydrogen(0,-100)
+        helium(0,-50)
+        oxygen(0,0)
+        sodium(0,50)
+    elif randomnumber == 4 and randomnumbertwo == 3 and randomnumberthree==2:
+        answerd = "hydrogen"
+        answerc = "helium"
+        answerb = "oxygen"
+        answera = "sodium"
+        hydrogen(0,-100)
+        helium(0,-50)
+        oxygen(0,50)
+        sodium(0,0)
+    elif randomnumber == 4 and randomnumbertwo == 2 and randomnumberthree==1:
+        answerd = "hydrogen"
+        answera = "helium"
+        answerc = "oxygen"
+        answerb = "sodium"
+        hydrogen(0,-100)
+        helium(0,50)
+        oxygen(0,-50)
+        sodium(0,0)
+    elif randomnumber == 4 and randomnumbertwo == 2 and randomnumberthree==2:
+        answerd = "hydrogen"
+        answera = "helium"
+        answerb = "oxygen"
+        answerc = "sodium"
+        hydrogen(0,-100)
+        helium(0,50)
+        oxygen(0,0)
+        sodium(0,-50)
+    elif randomnumber == 4 and randomnumbertwo == 1 and randomnumberthree==1:
+        answerd = "hydrogen"
+        answerb = "helium"
+        answerc = "oxygen"
+        answera = "sodium"
+        hydrogen(0,-100)
+        helium(0,0)
+        oxygen(0,-50)
+        sodium(0,50)
+    elif randomnumber == 4 and randomnumbertwo == 1 and randomnumberthree==2:
+        answerd = "hydrogen"
+        answerb = "helium"
+        answera = "oxygen"
+        answerc = "sodium"
+        hydrogen(0,-100)
+        helium(0,0)
+        oxygen(0,50)
+        sodium(0,-50)
+    elif randomnumber == 3 and randomnumbertwo == 3 and randomnumberthree==1:
+        answerc = "hydrogen"
+        answerb = "helium"
+        answerd = "oxygen"
+        answera = "sodium"
+        hydrogen(0,-50)
+        helium(0,0)
+        oxygen(0,-100)
+        sodium(0,50)
+    elif randomnumber == 3 and randomnumbertwo == 3 and randomnumberthree==2:
+        answerc = "hydrogen"
+        answerb = "helium"
+        answera = "oxygen"
+        answerd = "sodium"
+        hydrogen(0,-50)
+        helium(0,0)
+        oxygen(0,50)
+        sodium(0,-100)
+    elif randomnumber == 3 and randomnumbertwo == 2 and randomnumberthree==1:
+        answerc = "hydrogen"
+        answera = "helium"
+        answerb = "oxygen"
+        answerd = "sodium"
+        hydrogen(0,-50)
+        helium(0,50)
+        oxygen(0,0)
+        sodium(0,-100)
+    elif randomnumber == 3 and randomnumbertwo == 2 and randomnumberthree==2:
+        answerc = "hydrogen"
+        answera = "helium"
+        answerd = "oxygen"
+        answerb = "sodium"
+        hydrogen(0,-50)
+        helium(0,50)
+        oxygen(0,-100)
+        sodium(0,0)
+    elif randomnumber == 3 and randomnumbertwo == 1 and randomnumberthree==1:
+        answerc = "hydrogen"
+        answerd = "helium"
+        answera = "oxygen"
+        answerb = "sodium"
+        hydrogen(0,-50)
+        helium(0,-100)
+        oxygen(0,50)
+        sodium(0,0)
+    elif randomnumber == 3 and randomnumbertwo == 1 and randomnumberthree==2:
+        answerc = "hydrogen"
+        answerd = "helium"
+        answerb = "oxygen"
+        answera = "sodium"
+        hydrogen(0,-50)
+        helium(0,-100)
+        oxygen(0,0)
+        sodium(0,50)
+    elif randomnumber == 2 and randomnumbertwo == 3 and randomnumberthree==1:
+        answerb = "hydrogen"
+        answerc = "helium"
+        answerd = "oxygen"
+        answera = "sodium"
+        hydrogen(0,0)
+        helium(0,-50)
+        oxygen(0,-100)
+        sodium(0,50)
+    elif randomnumber == 2 and randomnumbertwo == 3 and randomnumberthree==2:
+        answerb = "hydrogen"
+        answerc = "helium"
+        answera = "oxygen"
+        answerd = "sodium"
+        hydrogen(0,0)
+        helium(0,-50)
+        oxygen(0,50)
+        sodium(0,-100)
+    elif randomnumber == 2 and randomnumbertwo == 2 and randomnumberthree==1:
+        answerb = "hydrogen"
+        answera = "helium"
+        answerc = "oxygen"
+        answerd = "sodium"
+        hydrogen(0,0)
+        helium(0,50)
+        oxygen(0,-50)
+        sodium(0,-100)
+    elif randomnumber == 2 and randomnumbertwo == 2 and randomnumberthree==2:
+        answerb = "hydrogen"
+        answera = "helium"
+        answerd = "oxygen"
+        answerc = "sodium"
+        hydrogen(0,0)
+        helium(0,50)
+        oxygen(0,-100)
+        sodium(0,-50)
+    elif randomnumber == 2 and randomnumbertwo == 1 and randomnumberthree==1:
+        answerb = "hydrogen"
+        answerd = "helium"
+        answera = "oxygen"
+        answerc = "sodium"
+        hydrogen(0,0)
+        helium(0,-100)
+        oxygen(0,50)
+        sodium(0,-50)
+    elif randomnumber == 2 and randomnumbertwo == 1 and randomnumberthree==2:
+        answerb = "hydrogen"
+        answerd = "helium"
+        answerc = "oxygen"
+        answera = "sodium"
+        hydrogen(0,0)
+        helium(0,-100)
+        oxygen(0,-50)
+        sodium(0,50)
+    elif randomnumber == 1 and randomnumbertwo == 3 and randomnumberthree==1:
+        answera = "hydrogen"
+        answerb = "helium"
+        answerd = "oxygen"
+        answerc = "sodium"
+        hydrogen(0,50)
+        helium(0,0)
+        oxygen(0,-100)
+        sodium(0,-50)
+    elif randomnumber == 1 and randomnumbertwo == 3 and randomnumberthree==2:
+        answera = "hydrogen"
+        answerb = "helium"
+        answerc = "oxygen"
+        answerd = "sodium"
+        hydrogen(0,50)
+        helium(0,0)
+        oxygen(0,-50)
+        sodium(0,-100)
+    elif randomnumber == 1 and randomnumbertwo == 2 and randomnumberthree==1:
+        answera = "hydrogen"
+        answerc = "helium"
+        answerb = "oxygen"
+        answerd = "sodium"
+        hydrogen(0,50)
+        helium(0,-50)
+        oxygen(0,0)
+        sodium(0,-100)
+    elif randomnumber == 1 and randomnumbertwo == 2 and randomnumberthree==2:
+        answera = "hydrogen"
+        answerc = "helium"
+        answerd = "oxygen"
+        answerb = "sodium"
+        hydrogen(0,50)
+        helium(0,-50)
+        oxygen(0,-100)
+        sodium(0,0)
+    elif randomnumber == 1 and randomnumbertwo == 1 and randomnumberthree==1:
+        answera = "hydrogen"
+        answerd = "helium"
+        answerc = "oxygen"
+        answerb = "sodium"
+        hydrogen(0,50)
+        helium(0,-100)
+        oxygen(0,-50)
+        sodium(0,0)
+    elif randomnumber == 1 and randomnumbertwo == 1 and randomnumberthree==2:
+        answera = "hydrogen"
+        answerd = "helium"
+        answerb = "oxygen"
+        answerc = "sodium"
+        hydrogen(0,50)
+        helium(0,-100)
+        oxygen(0,0)
+        sodium(0,-50)
     t.penup()
     t.pencolor(255,255,255)
     t.goto(-100,105)
@@ -614,10 +847,20 @@ if choice == 2:
         try:
             elementa = str(input("Which element do you think mystery spectrum 'A' is of?"))
             elementa = elementa.lower()
-            if elementa == "oxygen":
-                print("[Ben-ni]: Spot on! Oxygen is very important for many kinds of life on Earth, and astronomers use the spectra of oxygen to help gauge if planets in other solar systems might have aliens.")
-                break
-            elif elementa == "hydrogen" or elementa == "helium" or elementa == "sodium":
+            if elementa == answera:
+                if answera == "helium":
+                    print("[Ben-ni]: Spot on! There's Helium in many balloons. It also makes your voice sound squeaky if you inhale it!")
+                    break
+                if answera == "hydrogen":
+                    print("[Ben-ni]: Spot on! Hydrogen is the most common element in the universe..")
+                    break
+                if answera == "oxygen":
+                    print("[Ben-ni]: Spot on! Oxygen is very important for many kinds of life on Earth, and astronomers use the spectra of oxygen to help gauge if planets in other solar systems might have aliens.")
+                    break
+                if answera == "sodium":
+                    print("[Ben-ni]: Spot on! Sodium is one of the two elements in salt, along with chlorine.")
+                    break
+            elif elementa == "hydrogen" or elementa == "helium" or elementa == "sodium" or elementa == "oxygen":
                 print("Sorry, that's incorrect. Try again!")
             else:
                 print("Sorry, didn't quite understand that. To guess Hydrogen, enter 'hydrogen'; to guess Helium, enter 'helium'; to guess Sodium, enter 'sodium'.")
@@ -627,10 +870,20 @@ if choice == 2:
         try:
             elementb = str(input("Which element do you think mystery spectrum 'B' is of?"))
             elementb = elementb.lower()
-            if elementb == "hydrogen":
-                print("[Ben-ni]: Spot on! Hydrogen is the most common element in the universe..")
-                break
-            elif elementb == "oxygen" or elementb == "helium" or elementb == "sodium":
+            if elementb == answerb:
+                if answerb == "helium":
+                    print("[Ben-ni]: Spot on! There's Helium in many balloons. It also makes your voice sound squeaky if you inhale it!")
+                    break
+                if answerb == "hydrogen":
+                    print("[Ben-ni]: Spot on! Hydrogen is the most common element in the universe..")
+                    break
+                if answerb == "oxygen":
+                    print("[Ben-ni]: Spot on! Oxygen is very important for many kinds of life on Earth, and astronomers use the spectra of oxygen to help gauge if planets in other solar systems might have aliens.")
+                    break
+                if answerb == "sodium":
+                    print("[Ben-ni]: Spot on! Sodium is one of the two elements in salt, along with chlorine.")
+                    break
+            elif elementb == "oxygen" or elementb == "helium" or elementb == "sodium" or elementb == "hydrogen":
                 print("Sorry, that's incorrect. Try again!")
             else:
                 print("Sorry, didn't quite understand that. To guess Hydrogen, enter 'hydrogen'; to guess Helium, enter 'helium'; to guess Sodium, enter 'sodium'.")
@@ -640,10 +893,20 @@ if choice == 2:
         try:
             elementc = str(input("Which element do you think mystery spectrum 'C' is of?"))
             elementc =elementc.lower()
-            if elementc == "sodium":
-                print("[Ben-ni]: Spot on! Sodium is one of the two elements in salt, along with chlorine.")
-                break
-            elif elementc == "hydrogen" or elementc == "helium" or elementc == "oxygen":
+            if elementc == answerc:
+                if answerc == "helium":
+                    print("[Ben-ni]: Spot on! There's Helium in many balloons. It also makes your voice sound squeaky if you inhale it!")
+                    break
+                if answerc == "hydrogen":
+                    print("[Ben-ni]: Spot on! Hydrogen is the most common element in the universe..")
+                    break
+                if answerc == "oxygen":
+                    print("[Ben-ni]: Spot on! Oxygen is very important for many kinds of life on Earth, and astronomers use the spectra of oxygen to help gauge if planets in other solar systems might have aliens.")
+                    break
+                if answerc == "sodium":
+                    print("[Ben-ni]: Spot on! Sodium is one of the two elements in salt, along with chlorine.")
+                    break
+            elif elementc == "hydrogen" or elementc == "helium" or elementc == "oxygen" or elementc == "sodium":
                 print("Sorry, that's incorrect. Try again!")
             else:
                 print("Sorry, didn't quite understand that. To guess Hydrogen, enter 'hydrogen'; to guess Helium, enter 'helium'; to guess Sodium, enter 'sodium'.")
@@ -653,10 +916,20 @@ if choice == 2:
         try:
             elementd = str(input("Which element do you think mystery spectrum 'D' is of?"))
             elementd = elementd.lower()
-            if elementd == "helium":
-                print("[Ben-ni]: Spot on! There's Helium in many balloons. It also makes your voice sound squeaky if you inhale it!")
-                break
-            elif elementd == "hydrogen" or elementd == "oxygen" or elementd == "sodium":
+            if elementd == answerd:
+                if answerd == "helium":
+                    print("[Ben-ni]: Spot on! There's Helium in many balloons. It also makes your voice sound squeaky if you inhale it!")
+                    break
+                if answerd == "hydrogen":
+                    print("[Ben-ni]: Spot on! Hydrogen is the most common element in the universe..")
+                    break
+                if answerd == "oxygen":
+                    print("[Ben-ni]: Spot on! Oxygen is very important for many kinds of life on Earth, and astronomers use the spectra of oxygen to help gauge if planets in other solar systems might have aliens.")
+                    break
+                if answerd == "sodium":
+                    print("[Ben-ni]: Spot on! Sodium is one of the two elements in salt, along with chlorine.")
+                    break
+            elif elementd == "hydrogen" or elementd == "oxygen" or elementd == "sodium" or elementd == "helium":
                 print("Sorry, that's incorrect. Try again!")
             else:
                 print("Sorry, didn't quite understand that. To guess Hydrogen, enter 'hydrogen'; to guess Helium, enter 'helium'; to guess Sodium, enter 'sodium'.")
@@ -832,6 +1105,7 @@ if choice == 3:
             t.clear()
             t.pendown()
             t.penup()
+            #fufulling rocket to give them a sense of completion
             t.pencolor(128,128,128)
             t.fillcolor(128,128,128)
             t.begin_fill()
@@ -890,6 +1164,7 @@ if choice == 3:
             print("Blast off!!")
             t.clear()
             t.speed(1)
+            t.fillcolor(128,128,128)
             t.forward(1000)
             t.penup()
             t.ht()
